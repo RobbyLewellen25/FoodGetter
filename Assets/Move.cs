@@ -6,7 +6,7 @@ public class MoveObject : MonoBehaviour
     public float jumpHeight = 10f;
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
