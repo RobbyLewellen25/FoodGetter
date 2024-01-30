@@ -20,10 +20,20 @@ public class MakeDaFroot : MonoBehaviour
 
         minX = -Bounds.x;
         maxX = Bounds.x;
-        minY = -Bounds.y;
+        minY = -Bounds.y + 1.1f;
         maxY = Bounds.y;
     }
-    // Update is called once per frame
+    private void OnEnable()
+    {
+        // Subscribe to the event
+        FruitScript.OnFruitDestroyed += SpawnObj;
+    }
+
+    private void OnDisable()
+    {
+        // Unsubscribe from the event
+        FruitScript.OnFruitDestroyed -= SpawnObj;
+    }
     private void SpawnObj()
     {
         int NumberOfObj = Random.Range(0, myGameObjectToRespawn.Length);
@@ -31,8 +41,9 @@ public class MakeDaFroot : MonoBehaviour
         GameObject obj = Instantiate(myGameObjectToRespawn[NumberOfObj], pos, Quaternion.identity);
         obj.transform.parent = transform;
     }
-    void Update()
+    void FixedUpdate()
     {
-        
+     
     }
+
 }
