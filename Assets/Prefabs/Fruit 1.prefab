@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6609993934233559512}
   - component: {fileID: 4725605344322385853}
   m_Layer: 0
-  m_Name: Fruit
+  m_Name: Fruit 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: 58509b3b6ba2a49dab77670bea7c7bf2, type: 3}
-  m_Color: {r: 1, g: 0.80978304, b: 0, a: 1}
+  m_Color: {r: 0.70810795, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -177,4 +177,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2889f135695814aa3a74f2153fc0cce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitPrefab: {fileID: 8890542040566896254, guid: 530f3b5096c9a4e00b8cfc19a9f5b33b, type: 3}
+  fruitPrefab: {fileID: 8890542040566896254, guid: 01469f7aaf2fa4c2599ec0e511dee179, type: 3}
+  fruitScoreValue: 2

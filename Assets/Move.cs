@@ -59,7 +59,15 @@ public class MoveObject : MonoBehaviour
                 {
                     isJumping = false;
                 }
+            
             }
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+       if (collision.gameObject.CompareTag("Ground"))
+        {
+           isJumping = true;
         }
     }
 }
